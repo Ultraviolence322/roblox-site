@@ -19,7 +19,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
       hover:border-red-400
     `
     if(currentIndex === currentPage) {
-      className += 'border-red-500'
+      className += 'border-red-500 bg-red-200'
     } else {
       className += 'border-red-300'
     }
@@ -28,7 +28,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
   }
 
   return (
-    <ul className="flex flex-wrap">
+    <ul className="flex flex-wrap pt-4">
       {
         new Array(countOfPages).fill(0).map((i, index) => {
           return <li 
