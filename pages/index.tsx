@@ -1,27 +1,32 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import { useEffect, useState } from 'react'
-import { parseName } from '../helpers/parseName'
-import { IParsedSong, ISong } from '../types/ISong'
+
+import { IParsedSong } from '../types/ISong'
 
 import Paginator from '../components/Paginator'
 import TracksGrid from '../components/TracksGrid'
+import Search from '../components/Search'
+import { fetchAllSongs } from '../helpers/fetchAllSongs'
 
 interface Props {
   parsedSongs: IParsedSong[],
   accessToken: string
 }
 
+//artists, top(default), new(sort by code), search
+
 const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
-  const [countSongsToShow, setCountSongsToShow] = useState(20)
+  const [currentSongs, setCurrentSongs] = useState(parsedSongs)
+  const [countSongsToShow, setCountSongsToShow] = useState(12)
   const [currentPage, setCurrentPage] = useState(0)
-  const [countOfPages, setCountOfPages] = useState(parsedSongs.length / countSongsToShow)
+  const [countOfPages, setCountOfPages] = useState(Math.floor(parsedSongs.length / countSongsToShow))
   const [songsToShow, setSongsToShow] = useState<IParsedSong[]>([])
 
   useEffect(() => {
     const fetchIdForSongs = async () => {
       let songsWithId: IParsedSong[] = [] 
-      const songsToFetch = parsedSongs
-        .splice(currentPage * countSongsToShow, (currentPage * countSongsToShow) + countSongsToShow)
+      const songsToFetch = currentSongs
+        .slice(currentPage * countSongsToShow, (currentPage * countSongsToShow) + countSongsToShow)
 
       await Promise.all(songsToFetch.map(async (s) => {
         try {
@@ -45,51 +50,25 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
       }))  
 
       setSongsToShow([...songsWithId])
+      setCountOfPages(Math.floor(currentSongs.length / countSongsToShow))
     }
     
     fetchIdForSongs()
-  }, [currentPage, countSongsToShow])
+  }, [currentPage, countSongsToShow, currentSongs])
 
   return (
-    <div>
-      {songsToShow.length}
+    <div className="mx-auto max-w-5xl">
+      {currentSongs.length}
+      <Search items={parsedSongs} searchKey={'songName'} setSearchedItems={setCurrentSongs} />
       <TracksGrid songsToShow={songsToShow} />
-
       <Paginator countOfPages={countOfPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
     </div>
   )
 }
 
-// 'https://robloxmusics.com/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=44265&target_action=get-all-data&default_sorting=new_first&ninja_table_public_nonce=3a5901169d&chunk_number=0',
-//     'https://robloxmusics.com/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=44265&target_action=get-all-data&default_sorting=new_first&skip_rows=0&limit_rows=0&chunk_number=1&ninja_table_public_nonce=3a5901169d',
-//     'https://robloxmusics.com/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=44265&target_action=get-all-data&default_sorting=new_first&skip_rows=0&limit_rows=0&chunk_number=2&ninja_table_public_nonce=3a5901169d',
-//     'https://robloxmusics.com/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=44265&target_action=get-all-data&default_sorting=new_first&skip_rows=0&limit_rows=0&chunk_number=3&ninja_table_public_nonce=3a5901169d',
 
-export const getStaticProps = async ( ) => {
-  const urls = ['https://robloxmusics.com/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=44265&target_action=get-all-data&default_sorting=new_first&ninja_table_public_nonce=3a5901169d&chunk_number=0']
-  let parsedSongs: IParsedSong[] = [] 
-
-  await Promise.all(urls.map(async (url) => {
-    try {
-      const songsResponse = await fetch(url)
-      const songs: ISong[] = await songsResponse.json() 
-      const parsedArray: IParsedSong[] = []
-
-      songs.forEach(song => {
-        const songName = song.value.nameofthesong ? parseName(song.value.nameofthesong) : ''
-        const songCode = +song.value.robloxcode?.replace('<k1>', '').replace('</k1>', '')
-
-        parsedArray.push({
-          songName,
-          songCode
-        })
-      })
-
-      parsedSongs = [...parsedSongs, ...parsedArray]
-    } catch (error) {
-      console.log('error', error);
-    }
-  }))
+export const getStaticProps: GetStaticProps = async ( ) => {
+  const parsedSongs = await fetchAllSongs()
 
   const responseFetchAccessToken = await fetch(`${process.env.DOMEN}/api/access-token`)
   const dataFetchAccessToken = await responseFetchAccessToken.json()
