@@ -3,16 +3,17 @@ import React, { Dispatch, FormEventHandler, SetStateAction, useState } from 'rea
 import { IParsedSong } from '../types/ISong'
 
 interface Props {
-  parsedSongs: IParsedSong[],
-  setCurrentSongs: Dispatch<SetStateAction<IParsedSong[]>>
+  items: any[]
+  searchKey: string
+  setSearchedItems: Dispatch<SetStateAction<any>>
 }
-  const Search: NextPage<Props> = ({parsedSongs, setCurrentSongs}) => {
+  const Search: NextPage<Props> = ({items, searchKey, setSearchedItems}) => {
   const [searchField, setSearchField] = useState('')
   
   const searchTracks: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault()
-    const searchedTracks = parsedSongs.filter(e => e.songName.toLocaleLowerCase().includes(searchField.toLocaleLowerCase()))
-    setCurrentSongs(searchedTracks)
+    const searchedTracks = items.filter(e => e[searchKey].toLocaleLowerCase().includes(searchField.toLocaleLowerCase()))
+    setSearchedItems(searchedTracks)
   }
 
   return (
