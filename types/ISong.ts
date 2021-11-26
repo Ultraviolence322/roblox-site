@@ -14,7 +14,8 @@ export interface ISong {
 }
 
 export interface IParsedSong  {
-  id?: string,
+  id?: string
   songName: string
-  songCode: number,
+  songCode: number
+  copied?: boolean
 }
