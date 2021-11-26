@@ -7,18 +7,19 @@ import { IArtist } from '../../types/IArtists'
 import { parseName } from '../../helpers/parseName'
 import { fetchAllSongs } from '../../helpers/fetchAllSongs'
 import { IParsedSong } from '../../types/ISong'
-import TracksGrid from '../../components/TracksGrid'
+import GridNavigate from '../../components/GridNavigate'
 
 interface Props {
   artist: string, 
-  songsOfArtis: IParsedSong[]
+  songsOfArtis: IParsedSong[],
+  accessToken: string
 }
 
-const Artist: NextPage<Props> = ({artist, songsOfArtis}) => {
+const Artist: NextPage<Props> = ({artist, songsOfArtis, accessToken}) => {
   return (
     <div>
       <h1>{artist}</h1>
-      <TracksGrid songsToShow={songsOfArtis} />
+      <GridNavigate parsedSongs={songsOfArtis} accessToken={accessToken}/>
     </div>
   )
 }
@@ -59,10 +60,17 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const parsedSongs = await fetchAllSongs()
   const songsOfArtis = parsedSongs.filter(s => s.songName.toLowerCase().includes(artistName))
 
-  return { props: { 
-    artist: artistName,
-    songsOfArtis
-  } }
+  const responseFetchAccessToken = await fetch(`${process.env.DOMEN}/api/access-token`)
+  const dataFetchAccessToken = await responseFetchAccessToken.json()
+
+  return { 
+    props: { 
+      artist: artistName,
+      songsOfArtis,
+      accessToken: dataFetchAccessToken.accessToken,
+    },
+    revalidate: 3500, 
+  }
 }
 
 export default Artist
