@@ -37,10 +37,11 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
 
           songsWithId = [...songsWithId, {
             ...s,
-            id: dataFromSpotify.tracks.items[0].id ? dataFromSpotify.tracks.items[0].id : null,
+            id: dataFromSpotify.tracks.items[0]?.id ? dataFromSpotify.tracks.items[0].id : null,
           }]
         } catch (error) {
           console.log('error', error);
+          songsWithId = [...songsWithId, s]
         }
       }))  
 
@@ -54,9 +55,9 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
   return (
     <div className="mx-auto max-w-5xl">
       {currentSongs.length}
-      <Search items={parsedSongs} searchKey={'songName'} setSearchedItems={setCurrentSongs} />
+      <Search items={parsedSongs} searchKey={'songName'} setSearchedItems={setCurrentSongs} setCurrentPage={setCurrentPage}/>
       <TracksGrid songsToShow={songsToShow} />
-      <Paginator countOfPages={countOfPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+      {countOfPages !== 0 && <Paginator countOfPages={countOfPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
     </div>
   )
 }
