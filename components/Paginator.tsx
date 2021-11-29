@@ -2,9 +2,6 @@ import { NextPage } from 'next'
 import React, { Dispatch, SetStateAction } from 'react'
 import Image from 'next/image'
 
-import leftImage from '../assets/left.svg'
-import rightImage from '../assets/right.svg'
-
 interface Props {
   countOfPages: number,
   currentPage: number,
@@ -137,7 +134,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
           setCurrentPage(--currentPage)
         }}
       >
-        <Image src={leftImage} />
+        <Image width="22" height="22" src="/icons/left.svg" />
       </li>
         
       {renderSteps(countOfPages, currentPage)}
@@ -148,7 +145,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
           setCurrentPage(++currentPage)
         }}
       >
-        <Image src={rightImage}/>
+        <Image width="22" height="22" src="/icons/right.svg"/>
       </li>
     </ul>
   )

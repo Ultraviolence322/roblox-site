@@ -1,9 +1,6 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
 
-import searchImg from '../assets/search.svg'
-import resetImg from '../assets/reset.svg'
-
 import React, { Dispatch, FormEventHandler, SetStateAction, useRef, useState } from 'react'
 
 interface Props {
@@ -55,7 +52,7 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
         `}
         ref={sendButton}
       >
-        <Image width="20" height="20" src={searchImg}/>
+        <Image width="20" height="20" src="/icons/search.svg"/>
       </button>
 
       <button 
@@ -67,7 +64,7 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
         `}
         onClick={resetSearch}
       >
-        <Image className="relative tw-top-1" width="20" height="20" src={resetImg}/>
+        <Image width="20" height="20" src="/icons/reset.svg"/>
       </button>
     </form>
   )
