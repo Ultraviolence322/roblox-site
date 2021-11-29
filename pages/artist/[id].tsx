@@ -8,6 +8,7 @@ import { parseName } from '../../helpers/parseName'
 import { fetchAllSongs } from '../../helpers/fetchAllSongs'
 import { IParsedSong } from '../../types/ISong'
 import GridNavigate from '../../components/GridNavigate'
+import PageTitle from '../../components/PageTitle'
 
 interface Props {
   artist: string, 
@@ -18,7 +19,9 @@ interface Props {
 const Artist: NextPage<Props> = ({artist, songsOfArtis, accessToken}) => {
   return (
     <div>
-      <h1>{artist}</h1>
+      <PageTitle>
+        {artist} — Roblox Music Codes
+      </PageTitle>
       <GridNavigate parsedSongs={songsOfArtis} accessToken={accessToken}/>
     </div>
   )
