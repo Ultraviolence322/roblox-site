@@ -4,7 +4,9 @@ import { GetStaticProps, NextPage } from 'next'
 import { fetchAllSongs } from '../helpers/fetchAllSongs'
 
 import { IParsedSong } from '../types/ISong'
+
 import GridNavigate from '../components/GridNavigate'
+import PageTitle from '../components/PageTitle'
 
 interface Props {
   parsedSongs: IParsedSong[],
@@ -13,7 +15,9 @@ interface Props {
 const New: NextPage<Props> = ({parsedSongs, accessToken}) => {
   return (
     <>
-    <h1>NEw</h1>
+    <PageTitle>
+      New Roblox Music Codes
+    </PageTitle>
     <GridNavigate parsedSongs={parsedSongs} accessToken={accessToken}/>
     </>
   )
