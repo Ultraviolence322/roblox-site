@@ -25,16 +25,16 @@ const TracksGrid: NextPage<Props> = ({songsToShow}) => {
   }
 
   return (
-    <ul className="grid grid-cols-3 gap-4">
+    <ul className="grid grid-cols-3 gap-4 py-8">
       {songs.map((s, index) => {
-        return <li className="p-2 border-2 border-yellow-300 rounded-md" key={index}>
-          <h2 className="text-center ">{s.songName}</h2>
-          <h3 className="flex justify-between py-2"><span className="pt-1">{s.songCode}</span> 
+        return <li className="p-2 shadow rounded-md flex flex-col" key={index}>
+          <h2 className="text-center text-xl font-medium">{s.songName}</h2>
+          <h3 className="flex justify-between py-2"><span className="pt-1 text-lg">{s.songCode}</span> 
           <button 
             className={`
               p-1
-              border-2 rounded-md border-green-500
-              hover:border-green-600
+              rounded-md shadow
+              hover:shadow-lg
             `}
             onClick={() => copyCode(index, s.songCode)}
           >
@@ -45,7 +45,9 @@ const TracksGrid: NextPage<Props> = ({songsToShow}) => {
             ? <iframe 
                 src={`https://open.spotify.com/embed/track/${s.id}?utm_source=generator`} width="100%" height="80">
               </iframe>
-            : <div>Song don't found 😔</div>  
+            : <div className="relative h-full">
+                <span className="w-full text-center absolute top-1/2 transform -translate-y-1/2 ">Song don't found 😔</span>
+              </div>  
           }
         </li>
       })}
