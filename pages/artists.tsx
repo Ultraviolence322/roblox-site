@@ -7,6 +7,7 @@ import { IArtist, IParsedArtist } from '../types/IArtists'
 
 import Search from '../components/Search'
 import Link from 'next/link'
+import PageTitle from '../components/PageTitle'
 
 interface Props {
   artists: IParsedArtist[]
@@ -16,19 +17,19 @@ const Artists: NextPage<Props> = ({artists}) => {
   const [currentArtists, setCurrentArtists] = useState(artists)
   return (
     <div>
-      <h1>Artists</h1>
-      {artists.length}
-      <Search items={artists} searchKey={'name'} setSearchedItems={setCurrentArtists} />
-      <ul className="flex flex-wrap">
+      <PageTitle>
+        Artists — Roblox Music Codes
+      </PageTitle>
+      <Search placeholder="Artist's name..." items={artists} searchKey={'name'} setSearchedItems={setCurrentArtists} />
+      <ul className="flex flex-wrap justify-between py-8">
         {currentArtists.map(a => {
           return <li 
             className={`
-              bg-red-500
+              shadow
               rounded-md
-              text-white
-              px-4 py-2 m-2
+              px-4 py-2 mr-4 mb-4
               cursor-pointer
-              hover:bg-red-600
+              hover:shadow-lg
             `}
             key={a.id}
           >
