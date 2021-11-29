@@ -1,14 +1,20 @@
 import { NextPage } from 'next'
+import Image from 'next/image'
+
+import searchImg from '../assets/search.svg'
+import resetImg from '../assets/reset.svg'
+
 import React, { Dispatch, FormEventHandler, SetStateAction, useRef, useState } from 'react'
 
 interface Props {
   items: any[]
   searchKey: string
+  placeholder: string
   setSearchedItems: Dispatch<SetStateAction<any[]>>
   setCurrentPage?: Dispatch<SetStateAction<number>>
 }
 
-const Search: NextPage<Props> = ({items, searchKey, setSearchedItems, setCurrentPage}) => {
+const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItems, setCurrentPage}) => {
   const sendButton = useRef<HTMLButtonElement>(null)
   const [searchField, setSearchField] = useState('')
   
@@ -29,34 +35,41 @@ const Search: NextPage<Props> = ({items, searchKey, setSearchedItems, setCurrent
   }
 
   return (
-    <div>
-      <form  onSubmit={searchTracks}>
-        <input 
-          className={`
-            rounded-md border-2 border-gray-500
-            px-4 py-2
-          `} type="text" 
-          value={searchField} 
-          onInput={(e: any) => setSearchField(e.target.value)}
-        />
-        <button 
-          className={`
-            rounded-md border-2 border-gray-500
-            px-4 py-2
-            ml-2
-          `}
-          ref={sendButton}
-        >Search</button>
-      </form>
+    <form  className="flex justify-center pt-8" onSubmit={searchTracks}>
+      <input 
+        className={`
+          rounded-md shadow 
+          px-4 py-2
+          hover:shadow-lg
+        `} type="text" 
+        placeholder={placeholder}
+        value={searchField} 
+        onInput={(e: any) => setSearchField(e.target.value)}
+      />
       <button 
         className={`
-          rounded-md border-2 border-gray-500
-          px-4 py-2
-          ml-2
+          rounded-md shadow 
+          w-10
+          ml-2 pt-1
+          hover:shadow-lg
+        `}
+        ref={sendButton}
+      >
+        <Image width="20" height="20" src={searchImg}/>
+      </button>
+
+      <button 
+        className={`
+          rounded-md shadow 
+          w-10
+          ml-2 pt-1
+          hover:shadow-lg
         `}
         onClick={resetSearch}
-      >Reset</button>
-    </div>
+      >
+        <Image className="relative tw-top-1" width="20" height="20" src={resetImg}/>
+      </button>
+    </form>
   )
 }
 
