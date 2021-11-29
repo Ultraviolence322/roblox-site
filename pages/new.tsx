@@ -34,7 +34,7 @@ export const getStaticProps: GetStaticProps = async ( ) => {
   const dataFetchAccessToken = await responseFetchAccessToken.json()
   return { 
     props: { parsedSongs, accessToken: dataFetchAccessToken.accessToken },
-    revalidate: 3500,
+    revalidate: 3600,
   }
 }
 

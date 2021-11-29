@@ -49,7 +49,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
       }
     })
 
-    // console.log('paths', paths);
   } catch (error) {
     console.log('error', error);
   }
@@ -58,10 +57,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const artistName = (params?.id as string).split('-').join(' ')
+  const artistName = (params?.id as string).split('-').map(e => e[0].toUpperCase() + e.substring(1)).join(' ')
   
   const parsedSongs = await fetchAllSongs()
-  const songsOfArtis = parsedSongs.filter(s => s.songName.toLowerCase().includes(artistName))
+  const songsOfArtis = parsedSongs.filter(s => s.songName.toLowerCase().includes(artistName.toLocaleLowerCase()))
 
   const responseFetchAccessToken = await fetch(`${process.env.DOMEN}/api/access-token`)
   const dataFetchAccessToken = await responseFetchAccessToken.json()
@@ -72,7 +71,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       songsOfArtis,
       accessToken: dataFetchAccessToken.accessToken,
     },
-    revalidate: 3500, 
+    revalidate: 3600, 
   }
 }
 

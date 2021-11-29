@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import React, { useState } from 'react'
 
 import { parseName } from '../helpers/parseName'
@@ -43,7 +43,7 @@ const Artists: NextPage<Props> = ({artists}) => {
   )
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   let artists: IParsedArtist[] = []
   try {
     const artistsResponse = await fetch('https://robloxmusics.com/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=44266&target_action=get-all-data&default_sorting=old_first&ninja_table_public_nonce=bd0f5413fa')
@@ -58,8 +58,6 @@ export const getStaticProps = async () => {
         link: parsedName.split(' ').join('-').toLocaleLowerCase()
       }
     })
-
-    console.log('artists', artists);
   } catch (error) {
     console.log('error', error);
   }
