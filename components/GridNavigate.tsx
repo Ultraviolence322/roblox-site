@@ -53,11 +53,10 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
   }, [currentPage, countSongsToShow, currentSongs])
 
   return (
-    <div className="mx-auto max-w-5xl">
-      {currentSongs.length}
-      <Search items={parsedSongs} searchKey={'songName'} setSearchedItems={setCurrentSongs} setCurrentPage={setCurrentPage}/>
+    <div>
+      <Search placeholder="Song name..." items={parsedSongs} searchKey={'songName'} setSearchedItems={setCurrentSongs} setCurrentPage={setCurrentPage}/>
       <TracksGrid songsToShow={songsToShow} />
-      {countOfPages !== 0 && <Paginator countOfPages={countOfPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
+      {countOfPages > 1 && <Paginator countOfPages={countOfPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
     </div>
   )
 }
