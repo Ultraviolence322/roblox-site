@@ -1,5 +1,9 @@
 import { NextPage } from 'next'
 import React, { Dispatch, SetStateAction } from 'react'
+import Image from 'next/image'
+
+import leftImage from '../assets/left.svg'
+import rightImage from '../assets/right.svg'
 
 interface Props {
   countOfPages: number,
@@ -15,7 +19,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
         return new Array(countOfPages).fill(0).map((i, index) => {
           if(index === countOfPages - 2) {
             return <li 
-              className={PainatorItemClassName(index)}
+              className={PainatorItemClassName(index, true)}
               key={index} 
             >
               ...
@@ -35,7 +39,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
         return new Array(countOfPages).fill(0).map((i, index) => {
           if(index === 1) {
             return <li 
-              className={PainatorItemClassName(index)}
+              className={PainatorItemClassName(index, true)}
               key={index} 
             >
               ...
@@ -43,7 +47,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
           }
           if(index === countOfPages - 2) {
             return <li 
-              className={PainatorItemClassName(index)}
+              className={PainatorItemClassName(index, true)}
               key={index} 
             >
               ...
@@ -63,7 +67,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
         return new Array(countOfPages).fill(0).map((i, index) => {
           if(index === 1) {
             return <li 
-              className={PainatorItemClassName(index)}
+              className={PainatorItemClassName(index, true)}
               key={index} 
             >
               ...
@@ -93,58 +97,58 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
     }
   }
 
-  const PainatorItemClassName = (currentIndex: number): string => {
+  const PainatorItemClassName = (currentIndex: number, isDisable?: boolean): string => {
     let className = `
-      border-2 rounded-md
+      border-2 shadow rounded-md
       w-10 h-10
       m-1
       text-center leading-9
-      cursor-pointer
-      hover:border-red-400
     `
-    if(currentIndex === currentPage) {
-      className += 'border-red-500 bg-red-200'
+    if(isDisable) {
+
     } else {
-      className += 'border-red-300'
+      className += 'hover:shadow-lg cursor-pointer'
+    }
+
+    if(currentIndex === currentPage) {
+      className += 'border-gray-500'
     }
 
     return className
   }
 
+  const PainatorArrowClassName = (): string => {
+    let className = `
+      border-2 shadow rounded-md
+      w-10 h-10
+      m-1 p-1
+      text-center leading-9
+      cursor-pointer
+      hover:shadow-lg
+    `
+    return className
+  }
+
   return (
-    <ul className="flex flex-wrap pt-4 justify-center">
+    <ul className="flex flex-wrap pb-8 justify-center">
       <li 
-        className={`
-          border-2 rounded-md
-          w-10 h-10
-          m-1
-          text-center leading-9
-          cursor-pointer
-          hover:border-red-400
-        `}
+        className={PainatorArrowClassName()}
         onClick={() => {
           setCurrentPage(--currentPage)
         }}
       >
-        left
+        <Image src={leftImage} />
       </li>
         
       {renderSteps(countOfPages, currentPage)}
 
       <li 
-        className={`
-          border-2 rounded-md
-          w-10 h-10
-          m-1
-          text-center leading-9
-          cursor-pointer
-          hover:border-red-400
-        `}
+        className={PainatorArrowClassName()}
         onClick={() => {
           setCurrentPage(++currentPage)
         }}
       >
-        right
+        <Image src={rightImage}/>
       </li>
     </ul>
   )
