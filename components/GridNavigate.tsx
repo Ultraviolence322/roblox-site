@@ -23,7 +23,7 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
       const songsToFetch = currentSongs
         .slice(currentPage * countSongsToShow, (currentPage * countSongsToShow) + countSongsToShow)
 
-      await Promise.all(songsToFetch.map(async (s) => {
+      await Promise.all(songsToFetch?.map(async (s) => {
         try {
           const responseFromSpotify = await fetch(`https://api.spotify.com/v1/search?q=${s.songName}&type=track`, {
             headers: {

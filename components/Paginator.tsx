@@ -101,14 +101,14 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
       m-1
       text-center leading-9
     `
-    if(isDisable) {
+    if(isDisable || currentIndex === currentPage) {
 
     } else {
       className += 'hover:shadow-lg cursor-pointer'
     }
 
     if(currentIndex === currentPage) {
-      className += 'border-gray-500'
+      className += 'border-black'
     }
 
     return className
