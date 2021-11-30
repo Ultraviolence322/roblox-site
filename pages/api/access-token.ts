@@ -26,7 +26,8 @@ export default async function handler(
     })
 
     const responseBody = await respone.json()
-
+    console.log('responseBody', responseBody);
+    
     res.status(200).json({ accessToken: responseBody.access_token })
   } catch (error) {
     console.log('error', error);
