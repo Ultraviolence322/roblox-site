@@ -97,9 +97,10 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
   const PainatorItemClassName = (currentIndex: number, isDisable?: boolean): string => {
     let className = `
       border-2 shadow rounded-md
-      w-10 h-10
+      w-8 h-8
       m-1
-      text-center leading-9
+      text-center leading-7
+      xs:w-10  xs:h-10 xs:leading-9
     `
     if(isDisable || currentIndex === currentPage) {
 
@@ -117,11 +118,12 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
   const PainatorArrowClassName = (): string => {
     let className = `
       border-2 shadow rounded-md
-      w-10 h-10
+      w-8 h-8
       m-1 p-1
-      text-center leading-9
+      text-center leading-7
       cursor-pointer
       hover:shadow-lg
+      xs:w-10  xs:h-10  xs:leading-9
     `
     return className
   }

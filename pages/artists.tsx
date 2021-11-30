@@ -31,15 +31,22 @@ const Artists: NextPage<Props> = ({artists}) => {
         Artists — Roblox Music Codes
       </PageTitle>
       <Search placeholder="Artist's name..." items={artists} searchKey={'name'} setSearchedItems={setCurrentArtists} />
-      <ul className="flex flex-wrap justify-between py-8">
+      <ul className={`
+        py-8 
+        grid grid-cols-1
+        xs:grid-cols-2 gap-4
+        sm:flex sm:flex-wrap sm:justify-between sm:gap-0
+      `}>
         {currentArtists.map(a => {
           return <li 
             className={`
               shadow
               rounded-md
-              px-4 py-2 mr-4 mb-4
+              px-4 py-2 
               cursor-pointer
+              text-center
               hover:shadow-lg
+              sm:mr-4 sm:mb-4 sm:text-left
             `}
             key={a.id}
           >

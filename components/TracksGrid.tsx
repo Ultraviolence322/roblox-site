@@ -25,9 +25,9 @@ const TracksGrid: NextPage<Props> = ({songsToShow}) => {
   }
 
   return (
-    <ul className="grid grid-cols-3 gap-4 py-8">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-8">
       {songs.map((s, index) => {
-        return <li className="p-2 shadow rounded-md flex flex-col" key={index}>
+        return <li className="p-2 shadow rounded-md flex flex-col max-w-xs mx-auto w-full" key={index}>
           <h2 className="text-center text-xl font-medium">{s.songName}</h2>
           <h3 className="flex justify-between py-2"><span className="pt-1 text-lg">{s.songCode}</span> 
           <button 

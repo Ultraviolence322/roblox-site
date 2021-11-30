@@ -10,7 +10,7 @@ const Layout: NextPage<Props> = ({children}) => {
   return (
     <>
       <Navbar />
-      <main className="mx-auto max-w-5xl">{children}</main>
+      <main className="mx-auto max-w-5xl px-4">{children}</main>
     </>
   )
 }

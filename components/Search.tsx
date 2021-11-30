@@ -38,6 +38,8 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
           rounded-md shadow 
           px-4 py-2
           hover:shadow-lg
+          w-48
+          xs:w-60
         `} type="text" 
         placeholder={placeholder}
         value={searchField} 
