@@ -134,7 +134,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
           setCurrentPage(--currentPage)
         }}
       >
-        <Image width="22" height="22" src="/icons/left.svg" />
+        <Image alt="" width="22" height="22" src="/icons/left.svg" />
       </li>
         
       {renderSteps(countOfPages, currentPage)}
@@ -145,7 +145,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
           setCurrentPage(++currentPage)
         }}
       >
-        <Image width="22" height="22" src="/icons/right.svg"/>
+        <Image alt="" width="22" height="22" src="/icons/right.svg"/>
       </li>
     </ul>
   )

@@ -52,7 +52,7 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
         `}
         ref={sendButton}
       >
-        <Image width="20" height="20" src="/icons/search.svg"/>
+        <Image alt="" width="20" height="20" src="/icons/search.svg"/>
       </button>
 
       <button 
@@ -64,7 +64,7 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
         `}
         onClick={resetSearch}
       >
-        <Image width="20" height="20" src="/icons/reset.svg"/>
+        <Image alt="" width="20" height="20" src="/icons/reset.svg"/>
       </button>
     </form>
   )
