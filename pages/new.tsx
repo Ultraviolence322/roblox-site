@@ -34,19 +34,27 @@ const New: NextPage<Props> = ({parsedSongs, accessToken}) => {
 }
 
 export const getStaticProps: GetStaticProps = async ( ) => {
-  const dev = process.env.NODE_ENV !== 'production';
-  let parsedSongs = await fetchAllSongs()
-  
-  parsedSongs = parsedSongs.sort((a, b) => {
-    return b.songCode - a.songCode
-  })
+  try {
+    const dev = process.env.NODE_ENV !== 'production';
+    let parsedSongs = await fetchAllSongs()
+    
+    parsedSongs = parsedSongs.sort((a, b) => {
+      return b.songCode - a.songCode
+    })
 
-  const responseFetchAccessToken = await fetch(`${dev ? process.env.DEV_URL : process.env.PROD_URL}/api/access-token`)
-  const dataFetchAccessToken = await responseFetchAccessToken.json()
-  return { 
-    props: { parsedSongs, accessToken: dataFetchAccessToken.accessToken },
-    revalidate: 3600,
+    const responseFetchAccessToken = await fetch(`${dev ? process.env.DEV_URL : process.env.PROD_URL}/api/access-token`)
+    const dataFetchAccessToken = await responseFetchAccessToken.json()
+    return { 
+      props: { parsedSongs, accessToken: dataFetchAccessToken.accessToken },
+      revalidate: 3600,
+    }
+  } catch (error) {
+    return { 
+      props: { parsedSongs: '', accessToken: ''},
+      revalidate: 3600,
+    }
   }
+  
 }
 
 export default New
