@@ -23,27 +23,31 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
       const songsToFetch = currentSongs
         .slice(currentPage * countSongsToShow, (currentPage * countSongsToShow) + countSongsToShow)
 
-      await Promise.all(songsToFetch?.map(async (s) => {
-        try {
-          const responseFromSpotify = await fetch(`https://api.spotify.com/v1/search?q=${s.songName}&type=track`, {
-            headers: {
-              Accept: "application/json",
-              Authorization: `Bearer ${accessToken}`,
-              "Content-Type": "application/json"
-            }
-          })
+      console.log('songsToFetch', songsToFetch);
 
-          const dataFromSpotify = await responseFromSpotify.json()
-
-          songsWithId = [...songsWithId, {
-            ...s,
-            id: dataFromSpotify.tracks.items[0]?.id ? dataFromSpotify.tracks.items[0].id : null,
-          }]
-        } catch (error) {
-          console.log('error', error);
-          songsWithId = [...songsWithId, s]
-        }
-      }))  
+      if(Array.isArray(songsToFetch)) {
+        await Promise.all(songsToFetch?.map(async (s) => {
+          try {
+            const responseFromSpotify = await fetch(`https://api.spotify.com/v1/search?q=${s.songName}&type=track`, {
+              headers: {
+                Accept: "application/json",
+                Authorization: `Bearer ${accessToken}`,
+                "Content-Type": "application/json"
+              }
+            })
+  
+            const dataFromSpotify = await responseFromSpotify.json()
+  
+            songsWithId = [...songsWithId, {
+              ...s,
+              id: dataFromSpotify.tracks.items[0]?.id ? dataFromSpotify.tracks.items[0].id : null,
+            }]
+          } catch (error) {
+            console.log('error', error);
+            songsWithId = [...songsWithId, s]
+          }
+        }))  
+      }
 
       setSongsToShow([...songsWithId])
       setCountOfPages(Math.floor(currentSongs.length / countSongsToShow))
