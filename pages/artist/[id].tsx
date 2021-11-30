@@ -68,12 +68,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const dev = process.env.NODE_ENV !== 'production';
   const artistName = (params?.id as string).split('-').map(e => e[0].toUpperCase() + e.substring(1)).join(' ')
   
   const parsedSongs = await fetchAllSongs()
   const songsOfArtis = parsedSongs.filter(s => s.songName.toLowerCase().includes(artistName.toLocaleLowerCase()))
 
-  const responseFetchAccessToken = await fetch(`${process.env.DOMEN}/api/access-token`)
+  const responseFetchAccessToken = await fetch(`${dev ? process.env.DEV_URL : process.env.PROD_URL}/api/access-token`)
   const dataFetchAccessToken = await responseFetchAccessToken.json()
 
   return { 

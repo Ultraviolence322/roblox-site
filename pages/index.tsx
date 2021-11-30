@@ -38,9 +38,10 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
 
 
 export const getStaticProps: GetStaticProps = async ( ) => {
+  const dev = process.env.NODE_ENV !== 'production';
   const parsedSongs = await fetchAllSongs()
 
-  const responseFetchAccessToken = await fetch(`${process.env.DOMEN}/api/access-token`)
+  const responseFetchAccessToken = await fetch(`${dev ? process.env.DEV_URL : process.env.DEV_URL}/api/access-token`)
   const dataFetchAccessToken = await responseFetchAccessToken.json()
   return { 
     props: { parsedSongs, accessToken: dataFetchAccessToken.accessToken },
