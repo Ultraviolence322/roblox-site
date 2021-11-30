@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 import { GetStaticProps, NextPage } from 'next'
 
@@ -15,6 +16,15 @@ interface Props {
 const New: NextPage<Props> = ({parsedSongs, accessToken}) => {
   return (
     <>
+    <Head>
+      <title>
+        New Roblox music codes — Listen songs and copy the Roblox song IDs which you liked.
+      </title>
+      <meta 
+        name="Description" 
+        content="Site name — Here you can find new Roblox music codes and listen songs.">
+      </meta>
+    </Head>
     <PageTitle>
       New Roblox Music Codes
     </PageTitle>

@@ -1,5 +1,6 @@
-import { NextPage } from 'next'
 import React from 'react'
+import { NextPage } from 'next'
+import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 import { IArtist } from '../../types/IArtists'
@@ -7,6 +8,7 @@ import { IArtist } from '../../types/IArtists'
 import { parseName } from '../../helpers/parseName'
 import { fetchAllSongs } from '../../helpers/fetchAllSongs'
 import { IParsedSong } from '../../types/ISong'
+
 import GridNavigate from '../../components/GridNavigate'
 import PageTitle from '../../components/PageTitle'
 
@@ -18,12 +20,21 @@ interface Props {
 
 const Artist: NextPage<Props> = ({artist, songsOfArtis, accessToken}) => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>
+          Roblox music codes — Here you can see Roblox song IDs by {artist} and listen songs.
+        </title>
+        <meta 
+          name="Description" 
+          content={`Site name — Here you can see Roblox music codes by ${artist} and listen songs.`}>
+        </meta>
+      </Head>
       <PageTitle>
         {artist} — Roblox Music Codes
       </PageTitle>
       <GridNavigate parsedSongs={songsOfArtis} accessToken={accessToken}/>
-    </div>
+    </>
   )
 }
 

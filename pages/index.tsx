@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import type { GetStaticProps, NextPage } from 'next'
 
 import { IParsedSong } from '../types/ISong'
@@ -18,6 +19,15 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
 
   return (
     <>
+      <Head>
+        <title>
+          Roblox music codes — Here you can listen songs and copy the Roblox song IDs!
+        </title>
+        <meta 
+          name="Description" 
+          content="Site name — Here you can find Roblox music codes and listen songs. Choose by top list, by newest, by artist.">
+        </meta>
+      </Head>
       <PageTitle>
         Top Roblox Music Codes
       </PageTitle>

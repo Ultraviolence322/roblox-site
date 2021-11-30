@@ -8,6 +8,7 @@ import { IArtist, IParsedArtist } from '../types/IArtists'
 import Search from '../components/Search'
 import Link from 'next/link'
 import PageTitle from '../components/PageTitle'
+import Head from 'next/head'
 
 interface Props {
   artists: IParsedArtist[]
@@ -16,7 +17,16 @@ interface Props {
 const Artists: NextPage<Props> = ({artists}) => {
   const [currentArtists, setCurrentArtists] = useState(artists)
   return (
-    <div>
+    <>
+      <Head>
+        <title>
+          Roblox music codes — Here you can the Roblox song IDs by artist and then listen songs!
+        </title>
+        <meta 
+          name="Description" 
+          content="Site name — Here you can find Roblox music codes by artists and listen songs.">
+        </meta>
+      </Head>
       <PageTitle>
         Artists — Roblox Music Codes
       </PageTitle>
@@ -39,7 +49,7 @@ const Artists: NextPage<Props> = ({artists}) => {
           </li>
         })}
       </ul>
-    </div>
+    </>
   )
 }
 
