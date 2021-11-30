@@ -45,8 +45,8 @@ const TracksGrid: NextPage<Props> = ({songsToShow}) => {
             ? <iframe 
                 src={`https://open.spotify.com/embed/track/${s.id}?utm_source=generator`} width="100%" height="80">
               </iframe>
-            : <div className="relative h-full">
-                <span className="w-full text-center absolute top-1/2 transform -translate-y-1/2 ">Song don't found 😔</span>
+            : <div className="relative h-full py-4">
+                <span className="w-full text-center absolute top-1/2 transform -translate-y-1/2">Song don't found 😔</span>
               </div>  
           }
         </li>
