@@ -12,9 +12,6 @@ interface Props {
   parsedSongs: IParsedSong[],
   accessToken: string
 }
-
-//artists, top(default), new(sort by code), search
-
 const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
 
   return (
