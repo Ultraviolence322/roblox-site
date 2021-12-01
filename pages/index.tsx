@@ -40,7 +40,7 @@ export const getStaticProps: GetStaticProps = async ( ) => {
   console.log('dev', dev);
 
   try {
-    const responseFetchAccessToken = await fetch(`${dev ? process.env.DEV_URL : process.env.DEV_URL}/api/access-token`)
+    const responseFetchAccessToken = await fetch(`${dev ? process.env.DEV_URL : process.env.PROD_URL}/api/access-token`)
     const dataFetchAccessToken = await responseFetchAccessToken.json()
 
     return { 
