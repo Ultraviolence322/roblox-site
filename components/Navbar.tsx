@@ -36,7 +36,7 @@ const Navbar: NextPage<Props> = () => {
       h-screen
       bg-black
       p-2
-      md:relative md:h-auto 
+      md:relative md:h-auto  md:p-0
     `
     return className
   }
