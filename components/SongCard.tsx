@@ -29,6 +29,7 @@ const SongCard:NextPage<Props> = ({song, copyCode, index}) => {
 
         ? <div className="flex items-end h-full">
             <iframe 
+              title={`${song.songName}`}
               src={`https://open.spotify.com/embed/track/${song.id}?utm_source=generator`} width="100%" height="80">
             </iframe>
           </div> 

@@ -46,6 +46,7 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
         onInput={(e: any) => setSearchField(e.target.value)}
       />
       <button 
+        aria-label="Search songs"
         className={`
           rounded-md shadow 
           w-10
@@ -58,6 +59,7 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
       </button>
 
       <button 
+        aria-label="Reset search"
         className={`
           rounded-md shadow 
           w-10
