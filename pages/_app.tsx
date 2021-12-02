@@ -6,7 +6,7 @@ import * as gtag from '../lib/gtag'
 
 import Layout from '../components/Layout'
 import { useRouter } from 'next/dist/client/router'
-import { Head } from 'next/document'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
