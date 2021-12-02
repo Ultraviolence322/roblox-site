@@ -28,6 +28,9 @@ const New: NextPage<Props> = ({parsedSongs, accessToken}) => {
     <PageTitle>
       New Roblox Music Codes
     </PageTitle>
+    <p className="pt-4"> 
+      Here you can see new roblox music codes (sroted by new to old) which are most likely to work in the game.
+    </p>
     <GridNavigate parsedSongs={parsedSongs} accessToken={accessToken}/>
     </>
   )

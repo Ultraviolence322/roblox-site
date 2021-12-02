@@ -1,6 +1,7 @@
 import React from 'react'
 import { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 import { IArtist } from '../../types/IArtists'
@@ -33,6 +34,9 @@ const Artist: NextPage<Props> = ({artist, songsOfArtis, accessToken}) => {
       <PageTitle>
         {artist} — Roblox Music Codes
       </PageTitle>
+      <p className="pt-4">
+       If you cant find a song in this page try to use search in the <span className="underline text-blue-600"><Link href="/">main page</Link></span> where you can type song's name.
+      </p>
       <GridNavigate parsedSongs={songsOfArtis} accessToken={accessToken}/>
     </>
   )

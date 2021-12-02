@@ -28,6 +28,31 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
       <PageTitle>
         Top Roblox Music Codes
       </PageTitle>
+      <p className="pt-4">
+        Hey. Here you can find Roblox music codes. This site differs from other similar ones in that you can listen a song, the ID of which you found.
+        Site's database has many Roblox song IDs and sometimes updates.
+      </p>
+
+      <h2 className="text-center text-2xl pt-4 font-semibold">How i can find a sond id?</h2>
+        
+      <ul className="list-disc pt-4">
+        <li className="pb-2">You know what sond do you need:
+          <ol className="list-decimal pl-5">
+            <li>Click search bar below</li>
+            <li>Type song name</li>
+            <li>Click search icon or press Enter button</li>
+          </ol>
+        </li>
+        <li>You dont know what song do you need:
+          <ol className="list-decimal pl-5">
+            <li>Below you can see grid of songs</li>
+            <li>Listen songs which have Spotify player</li>
+            <li>If you found liked song just copy the id</li>
+            <li>To next page you need click pagination arrows below the grid</li>
+          </ol>
+        </li>
+      </ul>
+      
       <GridNavigate parsedSongs={parsedSongs} accessToken={accessToken}/>
     </>
   )
