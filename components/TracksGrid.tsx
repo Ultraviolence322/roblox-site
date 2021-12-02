@@ -32,11 +32,6 @@ const TracksGrid: NextPage<Props> = ({songsToShow}) => {
         return <SongCard key={index} song={s} copyCode={copyCode} index={index} />
       })}
     </ul>
-    
-    <h2 className="text-center text-2xl pb-4 font-semibold">How i can add a sond to Roblox?</h2>
-    <p>
-      video here
-    </p>
     </>
   )
 }

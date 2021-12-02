@@ -133,7 +133,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
       <li 
         className={PainatorArrowClassName()}
         onClick={() => {
-          setCurrentPage(--currentPage)
+          currentPage > 0 && setCurrentPage(--currentPage)
         }}
       >
         <Image alt="" width="22" height="22" src="/icons/left.svg" />
@@ -144,7 +144,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
       <li 
         className={PainatorArrowClassName()}
         onClick={() => {
-          setCurrentPage(++currentPage)
+          currentPage + 1 < countOfPages && setCurrentPage(++currentPage)
         }}
       >
         <Image alt="" width="22" height="22" src="/icons/right.svg"/>

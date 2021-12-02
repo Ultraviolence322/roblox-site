@@ -14,7 +14,7 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
   const [currentSongs, setCurrentSongs] = useState(parsedSongs)
   const [countSongsToShow, setCountSongsToShow] = useState(12)
   const [currentPage, setCurrentPage] = useState(0)
-  const [countOfPages, setCountOfPages] = useState(Math.floor(parsedSongs.length / countSongsToShow))
+  const [countOfPages, setCountOfPages] = useState(Math.ceil(parsedSongs.length / countSongsToShow))
   const [songsToShow, setSongsToShow] = useState<IParsedSong[]>([])
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
       }
 
       setSongsToShow([...songsWithId])
-      setCountOfPages(Math.floor(currentSongs.length / countSongsToShow))
+      setCountOfPages(Math.ceil(currentSongs.length / countSongsToShow))
     }
     
     fetchIdForSongs()
@@ -59,8 +59,13 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
   return (
     <div>
       <Search placeholder="Song name..." items={parsedSongs} searchKey={'songName'} setSearchedItems={setCurrentSongs} setCurrentPage={setCurrentPage}/>
-      <TracksGrid songsToShow={songsToShow} />
+      {songsToShow.length ? <TracksGrid songsToShow={songsToShow}/> : <p className="text-center py-10">List is empty 😔</p> }
       {countOfPages > 1 && <Paginator countOfPages={countOfPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
+
+      <h2 className="text-center text-2xl pb-4 font-semibold">How i can add a sond to Roblox?</h2>
+      <p>
+        video here
+      </p>
     </div>
   )
 }
