@@ -30,7 +30,7 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
       </PageTitle>
       <p className="pt-4">
         Hey. Here you can find Roblox music codes. This site differs from other similar ones in that you can listen a song, the ID of which you found.
-        Site's database has many Roblox song IDs and sometimes updates.
+        Sites database has many Roblox song IDs and sometimes updates.
       </p>
 
       <h2 className="text-center text-2xl pt-4 font-semibold">How i can find a sond id?</h2>
