@@ -35,7 +35,7 @@ const Artist: NextPage<Props> = ({artist, songsOfArtis, accessToken}) => {
         {artist} — Roblox Music Codes
       </PageTitle>
       <p className="pt-4">
-        If you can't find a song on this page try to type song's name in the search bar on the<span className="underline text-blue-600"><Link href="/">main page</Link></span>.
+        If you can't find a song on this page try to type song's name in the search bar on the <span className="underline text-blue-600"><Link href="/">main page</Link></span>.
       </p>
       <GridNavigate parsedSongs={songsOfArtis} accessToken={accessToken}/>
     </>

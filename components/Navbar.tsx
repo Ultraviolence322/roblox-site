@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/dist/client/router'
 
@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Navbar: NextPage<Props> = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const [isMedium, setIsMedium] = useState(true)
 
   const router = useRouter()
@@ -40,6 +40,10 @@ const Navbar: NextPage<Props> = () => {
     `
     return className
   }
+
+  useLayoutEffect(() => {
+    window.innerWidth <= 768 ? setIsOpen(false) : setIsOpen(true)
+  }, [])
 
   useEffect(() => {
     const setNewWidthOfWindow = () => {

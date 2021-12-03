@@ -31,7 +31,7 @@ const Artists: NextPage<Props> = ({artists}) => {
         Artists — Roblox Music Codes
       </PageTitle>
       <p className="pt-4">
-        If you can't find an artist on this page try to type artist's name in the search bar on the<span className="underline text-blue-600"><Link href="/">main page</Link></span>.
+        If you can't find an artist on this page try to type artist's name in the search bar on the <span className="underline text-blue-600"><Link href="/">main page</Link></span>.
       </p>
       <Search placeholder="Artist's name..." items={artists} searchKey={'name'} setSearchedItems={setCurrentArtists} />
       <ul className={`
