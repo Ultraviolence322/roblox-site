@@ -62,7 +62,6 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
 export const getStaticProps: GetStaticProps = async ( ) => {
   const parsedSongs = await fetchAllSongs()
   const dev = process.env.NODE_ENV !== 'production';
-  console.log('dev', dev);
 
   try {
     const responseFetchAccessToken = await fetch(`${dev ? process.env.DEV_URL : process.env.PROD_URL}/api/access-token`)

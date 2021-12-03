@@ -23,8 +23,6 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
       const songsToFetch = currentSongs
         .slice(currentPage * countSongsToShow, (currentPage * countSongsToShow) + countSongsToShow)
 
-      console.log('songsToFetch', songsToFetch);
-
       if(Array.isArray(songsToFetch)) {
         await Promise.all(songsToFetch?.map(async (s) => {
           try {
