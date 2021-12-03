@@ -18,35 +18,35 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
     <>
       <Head>
         <title>
-          Roblox music codes — Here you can listen songs and copy the Roblox song IDs!
+          Roblox music codes — Listen songs and copy the Roblox song IDs!
         </title>
         <meta 
           name="Description" 
-          content="Site name — Here you can find Roblox music codes and listen songs. Choose by top list, by newest, by artist.">
+          content="Roblox music codes — Here you can find Roblox music codes and listen songs. Choose by top list, by newest, by artist.">
         </meta>
       </Head>
       <PageTitle>
         Top Roblox Music Codes
       </PageTitle>
       <p className="pt-4">
-        Hey. Here you can find Roblox music codes. This site differs from other similar ones in that you can listen a song, the ID of which you found.
-        Sites database has many Roblox song IDs and sometimes updates.
+        Hey. Here you can find Roblox music codes. This website differs from other similar services. Here you can listen a song and get its ID immediately.
+        Website's database has many Roblox song IDs, that sometimes get updated.
       </p>
 
       <h2 className="text-center text-2xl pt-4 font-semibold">How i can find a sond id?</h2>
         
       <ul className="list-disc pt-4">
-        <li className="pb-2">You know what sond do you need:
+        <li className="pb-2">You know what song you need:
           <ol className="list-decimal pl-5">
             <li>Click search bar below</li>
             <li>Type song name</li>
             <li>Click search icon or press Enter button</li>
           </ol>
         </li>
-        <li>You dont know what song do you need:
+        <li>You don't know what song you need:
           <ol className="list-decimal pl-5">
             <li>Below you can see grid of songs</li>
-            <li>Listen songs which have Spotify player</li>
+            <li>Listen songs, that Spotify player has</li>
             <li>If you found liked song just copy the id</li>
             <li>To next page you need click pagination arrows below the grid</li>
           </ol>

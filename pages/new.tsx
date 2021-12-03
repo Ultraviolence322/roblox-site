@@ -22,15 +22,17 @@ const New: NextPage<Props> = ({parsedSongs, accessToken}) => {
       </title>
       <meta 
         name="Description" 
-        content="Site name — Here you can find new Roblox music codes and listen songs.">
+        content="Roblox music codes — Here you can find new Roblox music codes and listen songs.">
       </meta>
     </Head>
     <PageTitle>
       New Roblox Music Codes
     </PageTitle>
     <p className="pt-4"> 
-      Here you can see new roblox music codes (sroted by new to old) which are most likely to work in the game.
+      Here you can see new roblox music codes (sroted by new to old) which most of them work in Roblox.
     </p>
+    <h2 className="text-center text-2xl pt-4 font-semibold"> Why don't all songs work?</h2>
+    <p>Some of music codes may not work, because they get deleted by Roblox due to copyright.</p>
     <GridNavigate parsedSongs={parsedSongs} accessToken={accessToken}/>
     </>
   )

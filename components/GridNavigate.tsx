@@ -62,10 +62,10 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
       {songsToShow.length ? <TracksGrid songsToShow={songsToShow}/> : <p className="text-center py-10">List is empty 😔</p> }
       {countOfPages > 1 && <Paginator countOfPages={countOfPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
 
-      <h2 className="text-center text-2xl pb-4 font-semibold">How i can add a sond to Roblox?</h2>
+      {/* <h2 className="text-center text-2xl pb-4 font-semibold">How i can add a sond to Roblox?</h2>
       <p>
         video here
-      </p>
+      </p> */}
     </div>
   )
 }

@@ -20,18 +20,18 @@ const Artists: NextPage<Props> = ({artists}) => {
     <>
       <Head>
         <title>
-          Roblox music codes — Here you can the Roblox song IDs by artist and then listen songs!
+          Roblox music codes — Choose a songs by your favorite artist.
         </title>
         <meta 
           name="Description" 
-          content="Site name — Here you can find Roblox music codes by artists and listen songs.">
+          content="Roblox music codes — Here you can find Roblox music codes by artists and listen songs.">
         </meta>
       </Head>
       <PageTitle>
         Artists — Roblox Music Codes
       </PageTitle>
       <p className="pt-4">
-       If you cant find an artist in this page try to use search in the <span className="underline text-blue-600"><Link href="/">main page</Link></span> where you can type artists name.
+        If you can't find an artist on this page try to type artist's name in the search bar on the<span className="underline text-blue-600"><Link href="/">main page</Link></span>.
       </p>
       <Search placeholder="Artist's name..." items={artists} searchKey={'name'} setSearchedItems={setCurrentArtists} />
       <ul className={`

@@ -24,18 +24,18 @@ const Artist: NextPage<Props> = ({artist, songsOfArtis, accessToken}) => {
     <>
       <Head>
         <title>
-          Roblox music codes — Here you can see Roblox song IDs by {artist} and listen songs.
+          Roblox music codes — {artist}'s songs.
         </title>
         <meta 
           name="Description" 
-          content={`Site name — Here you can see Roblox music codes by ${artist} and listen songs.`}>
+          content={`Roblox music codes — Here you can listen to ${artist}'s songs and immediately copy their IDs.`}>
         </meta>
       </Head>
       <PageTitle>
         {artist} — Roblox Music Codes
       </PageTitle>
       <p className="pt-4">
-       If you cant find a song in this page try to use search in the <span className="underline text-blue-600"><Link href="/">main page</Link></span> where you can type songs name.
+        If you can't find a song on this page try to type song's name in the search bar on the<span className="underline text-blue-600"><Link href="/">main page</Link></span>.
       </p>
       <GridNavigate parsedSongs={songsOfArtis} accessToken={accessToken}/>
     </>
