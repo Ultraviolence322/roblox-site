@@ -31,7 +31,7 @@ const New: NextPage<Props> = ({parsedSongs, accessToken}) => {
     <p className="pt-4"> 
       Here you can see new roblox music codes (sroted by new to old) which most of them work in Roblox.
     </p>
-    <h2 className="text-center text-2xl pt-4 font-semibold"> Why don't all songs work?</h2>
+    <h2 className="text-center text-2xl pt-4 font-semibold"> Why don&apos;t all songs work?</h2>
     <p>Some of music codes may not work, because they get deleted by Roblox due to copyright.</p>
     <GridNavigate parsedSongs={parsedSongs} accessToken={accessToken}/>
     </>
