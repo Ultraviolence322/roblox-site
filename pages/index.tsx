@@ -35,7 +35,7 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
 
       <h2 className="text-center text-2xl pt-4 font-semibold">How i can find a sond id?</h2>
         
-      <ul className="list-disc pt-4">
+      <ul className="pt-4">
         <li className="pb-2">You know what song you need:
           <ol className="list-decimal pl-5">
             <li>Click search bar below</li>
