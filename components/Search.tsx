@@ -37,9 +37,10 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
         className={`
           rounded-md shadow 
           px-4 py-2
-          hover:shadow-lg
           w-48
           xs:w-60
+          hover:shadow-lg
+          transition duration-300
         `} type="text" 
         placeholder={placeholder}
         value={searchField} 
@@ -52,6 +53,7 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
           w-10
           ml-2 pt-1
           hover:shadow-lg
+          transition duration-300
         `}
         ref={sendButton}
       >
@@ -65,6 +67,7 @@ const Search: NextPage<Props> = ({items, searchKey, placeholder, setSearchedItem
           w-10
           ml-2 pt-1
           hover:shadow-lg
+          transition duration-300
         `}
         onClick={resetSearch}
       >

@@ -49,6 +49,7 @@ const Artists: NextPage<Props> = ({artists}) => {
               cursor-pointer
               text-center
               hover:shadow-lg
+              transition duration-300
               sm:mr-4 sm:mb-4 sm:text-left
             `}
             key={a.id}

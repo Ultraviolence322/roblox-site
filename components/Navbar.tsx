@@ -18,6 +18,7 @@ const Navbar: NextPage<Props> = () => {
       border-b-4 
       border-transparent
       hover:border-white
+      transition duration-300
     `
     if(!isMedium){
       className += 'mb-4 px-0 mx-4 '

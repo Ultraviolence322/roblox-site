@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import { IParsedSong } from '../types/ISong'
 
 interface Props {
@@ -19,6 +19,7 @@ const SongCard:NextPage<Props> = ({song, copyCode, index}) => {
           p-1
           rounded-md shadow
           hover:shadow-lg
+          transition duration-300
         `}
         onClick={() => copyCode(index, song.songCode)}
       >

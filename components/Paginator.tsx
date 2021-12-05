@@ -100,6 +100,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
       w-8 h-8
       m-1
       text-center leading-7
+      transition duration-300
       xs:w-10  xs:h-10 xs:leading-9
     `
     if(isDisable || currentIndex === currentPage) {
@@ -123,6 +124,7 @@ const Paginator: NextPage<Props> = ({countOfPages, currentPage, setCurrentPage})
       text-center leading-7
       cursor-pointer
       hover:shadow-lg
+      transition duration-300
       xs:w-10  xs:h-10  xs:leading-9
     `
     return className
