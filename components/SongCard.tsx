@@ -35,7 +35,7 @@ const SongCard:NextPage<Props> = ({song, copyCode, index}) => {
             </iframe>
           </div> 
         : <div className="relative h-full py-4">
-            <span className="w-full text-center absolute top-1/2 transform -translate-y-1/2">The song isn't found 😔</span>
+            <span className="w-full text-center absolute top-1/2 transform -translate-y-1/2">The song wasn't found 😔</span>
           </div>  
       }
       
