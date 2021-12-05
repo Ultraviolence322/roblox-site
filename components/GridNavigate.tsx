@@ -4,6 +4,7 @@ import { IParsedSong } from '../types/ISong'
 import Paginator from './Paginator'
 import Search from './Search'
 import TracksGrid from './TracksGrid'
+import TracksGridScelet from './TracksGridScelet'
 
 interface Props {
   parsedSongs: IParsedSong[],
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
+  const [gridIsLoading, setGridIsLoading] = useState(true)
   const [currentSongs, setCurrentSongs] = useState(parsedSongs)
   const [countSongsToShow, setCountSongsToShow] = useState(12)
   const [currentPage, setCurrentPage] = useState(0)
@@ -47,6 +49,7 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
         }))  
       }
 
+      setGridIsLoading(false)
       setSongsToShow([...songsWithId])
       setCountOfPages(Math.ceil(currentSongs.length / countSongsToShow))
     }
@@ -57,7 +60,12 @@ const GridNavigate: NextPage<Props> = ({parsedSongs, accessToken}) => {
   return (
     <div>
       <Search placeholder="Song name..." items={parsedSongs} searchKey={'songName'} setSearchedItems={setCurrentSongs} setCurrentPage={setCurrentPage}/>
-      {songsToShow.length ? <TracksGrid songsToShow={songsToShow}/> : <p className="text-center py-10">List is empty 😔</p> }
+      {songsToShow.length && !gridIsLoading 
+        ? <TracksGrid songsToShow={songsToShow}/> 
+        : gridIsLoading 
+          ? <TracksGridScelet songsCount={countSongsToShow}/>
+          : <p className="text-center py-10">List is empty 😔</p> 
+      }
       {countOfPages > 1 && <Paginator countOfPages={countOfPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
 
       {/* <h2 className="text-center text-2xl pb-4 font-semibold">How i can add a sond to Roblox?</h2>
