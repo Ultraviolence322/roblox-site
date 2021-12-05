@@ -33,7 +33,7 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
         Website&apos;s database has many Roblox song IDs, that sometimes get updated.
       </p>
 
-      <h2 className="text-center text-2xl pt-4 font-semibold">How i can find a sond id?</h2>
+      <h2 className="text-center text-2xl pt-4 font-semibold">How can i find a sond id?</h2>
         
       <ul className="pt-4">
         <li className="pb-2">You know what song you need:
