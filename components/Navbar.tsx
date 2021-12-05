@@ -89,17 +89,17 @@ const Navbar: NextPage<Props> = () => {
             onClick={() => setIsOpen(!isOpen)}
           >✖</div>
           <ul className="flex flex-col justify-start md:flex-row">
-            <li className={getLinkClassName('/')}>
+            <li onClick={() => !isMedium && setIsOpen(false)} className={getLinkClassName('/')}>
               <Link href="/">
                 Top Music Codes
               </Link> 
             </li>
-            <li className={getLinkClassName('/new')}>
+            <li onClick={() => !isMedium && setIsOpen(false)} className={getLinkClassName('/new')}>
               <Link href="/new">
                 New Music Codes
               </Link>
             </li>
-            <li className={getLinkClassName('/artists')}>
+            <li onClick={() => !isMedium && setIsOpen(false)} className={getLinkClassName('/artists')}>
               <Link href="/artists">
                 Artists
               </Link>
