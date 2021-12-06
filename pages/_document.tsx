@@ -33,6 +33,8 @@ const Document:NextPage =  () => {
           `,
                 }}
               />
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3917947412278595"
+     crossOrigin="anonymous"></script>
             </>
           )}
       </Head>
