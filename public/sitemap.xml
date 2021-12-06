@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      
+            <url>
+              <loc>http://localhost:3000/artists</loc>
+              <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          
+            <url>
+              <loc>http://localhost:3000/new</loc>
+              <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          
+      
+              <url>
+                <loc>http://localhost:3000/artist/madonna</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/partynextdoor</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/the-1975</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/joey-bada$$</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/aerosmith</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/christina-aguilera</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/sza</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/nas</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/tory-lanez</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/wiz-khalifa</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/schoolboy-q</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/pink-floyd</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/2-chainz</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/jhené-aiko</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/dej-loaf</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/tech-n9ne</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/mac-miller</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/bryson-tiller</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/jay-z</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/offset</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/dr.-dre</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/brockhampton</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/lil-wayne</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/sean-paul</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/asap-rocky</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/n.w.a.</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/kygo</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/bring-me-the-horizon</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/charli-xcx</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/lil-durk</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/earl-sweatshirt</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/kevin-gates</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/bastille</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/lana-del-rey</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/denzel-curry</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/french-montana</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/fetty-wap</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/50-cent</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/adele</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/martin-garrix</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/pitbull</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/major-lazer</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/meek-mill</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/flo-rida</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/t-pain</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/kehlani</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/akon</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/pnl</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/rae-sremmurd</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/jonas-blue</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/avril-lavigne</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/calvin-harris</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/one-ok-rock</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/kid-cudi</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/zack-knight</loc>
+                <lastmod>2021-12-06T08:28:39.320Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/machine-gun-kelly</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/coldplay</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/dua-lipa</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/future</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/elton-john</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/katy-perry</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/the-beatles</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/iggy-azalea</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/russell-vitale</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/sia</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/frank-ocean</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/zara-larsson</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/paulo-londra</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/ilovefriday</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/childish-gambino</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/david-guetta</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/rihanna</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/lady-gaga</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/the-chainsmokers</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/justin-bieber</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/melanie-martinez</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/linkin-park</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/green-day</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/kendrick-lamar</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/j.-cole</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/charlie-puth</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/avicii</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/21-savage</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/ellie-goulding</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/dj-snake</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/kodak-black</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/shakira</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/blackbear</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/chief-keef</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/tyga</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/logic</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/lil-pump</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/rex-orange-county</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/onerepublic</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/kanye-west</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/playboi-carti</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/maroon-5</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/taylor-swift</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/nirvana</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/the-weeknd</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/bruno-mars</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/young-thug</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/beyoncé</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/migos</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/chris-brown</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/mariah-carey</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/drake</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/travis-scott</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/joji</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/marshmello</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/snoop-dogg</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/ed-sheeran</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/nicki-minaj</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/khalid</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/clean-bandit</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/panic!-at-the-disco</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/cardi-b</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/6ix9ine</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/halsey</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/lil-uzi-vert</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/twenty-one-pilots</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/shawn-mendes</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/$uicideboy$</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/ski-mask-the-slump-god</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/bad-bunny</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/eminem</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/lil-skies</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/blueface</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/lil-baby</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/post-malone</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/ariana-grande</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/nf</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/imagine-dragons</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/ynw-melly</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/camila-cabello</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/bts</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/alan-walker</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/billie-eilish</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/juice-wrld</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>http://localhost:3000/artist/xxxtentacion</loc>
+                <lastmod>2021-12-06T08:28:39.321Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+              
+    </urlset>
+  
