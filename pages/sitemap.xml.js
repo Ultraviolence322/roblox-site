@@ -6,7 +6,7 @@ const Sitemap = () => {};
 export const getServerSideProps = async ({ res }) => {
   const baseUrl = {
     development: "http://localhost:3000",
-    production: "https://robloxmusiccodes.vercel.app/",
+    production: "https://robloxmusiccodes.vercel.app",
   }[process.env.NODE_ENV];
 
   const staticPages = fs
@@ -46,7 +46,7 @@ export const getServerSideProps = async ({ res }) => {
         .map((url) => {
           return `
             <url>
-              <loc>${url.split('').splice(0, url.length - 4).join('')}</loc>
+              <loc>${url}</loc>
               <lastmod>${new Date().toISOString()}</lastmod>
               <changefreq>monthly</changefreq>
               <priority>1.0</priority>
