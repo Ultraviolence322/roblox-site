@@ -13,10 +13,15 @@ interface Props {
   accessToken: string
 }
 const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
-
+  const isProduction = process.env.NODE_ENV === "production";
+  
   return (
     <>
       <Head>
+        {isProduction && 
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3917947412278595"
+          crossOrigin="anonymous"></script>
+        }
         <title>
           Roblox music codes — Listen songs and copy the Roblox song IDs!
         </title>
