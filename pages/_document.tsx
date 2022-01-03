@@ -8,6 +8,10 @@ const Document:NextPage =  () => {
   return (
     <Html lang="en-us">
       <Head>
+        {isProduction && 
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3917947412278595"
+          crossOrigin="anonymous"></script>
+        }
         <link
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
           rel="stylesheet"

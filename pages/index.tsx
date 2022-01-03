@@ -7,21 +7,16 @@ import { fetchAllSongs } from '../helpers/fetchAllSongs'
 
 import GridNavigate from '../components/GridNavigate'
 import PageTitle from '../components/PageTitle'
+import Ad from '../components/Ad'
 
 interface Props {
   parsedSongs: IParsedSong[],
   accessToken: string
 }
 const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
-  const isProduction = process.env.NODE_ENV === "production";
-  
   return (
     <>
       <Head>
-        {isProduction && 
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3917947412278595"
-          crossOrigin="anonymous"></script>
-        }
         <title>
           Roblox music codes — Listen songs and copy the Roblox song IDs!
         </title>
@@ -30,6 +25,7 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
           content="Roblox music codes — Here you can find Roblox music codes and listen songs. Choose by top list, by newest, by artist.">
         </meta>
       </Head>
+      <Ad slotId="3650451928" />
       <PageTitle>
         Top Roblox Music Codes
       </PageTitle>
