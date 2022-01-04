@@ -34,7 +34,7 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
         Website&apos;s database has many Roblox song IDs, that sometimes get updated.
       </p>
 
-      <h2 className="text-center text-2xl pt-4 font-semibold">How can i find a sond id?</h2>
+      <h2 className="text-center text-2xl pt-4 font-semibold">How can i find a song id?</h2>
         
       <ul className="pt-4">
         <li className="pb-2">You know what song you need:
@@ -55,6 +55,29 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
       </ul>
       
       <GridNavigate parsedSongs={parsedSongs} accessToken={accessToken}/>
+
+      <h2 className="text-center text-2xl pt-4 font-semibold">How can i use Roblox music codes in game?</h2>
+
+      <ul className="pt-4">
+        <li className="pb-2">
+          Lounch the game;
+        </li>
+        <li className="pb-2">
+          Click "Discover" in sidebar;
+        </li>
+        <li className="pb-2">
+          Type "Test Music Codes" in search experiences;
+        </li>
+        <li className="pb-2">
+          Click first or second result;
+        </li>
+        <li className="pb-2">
+          In game need to type the id what you found.
+        </li>
+      </ul>
+
+      <h2 className="text-center text-2xl pt-4 font-semibold"> Why don&apos;t all songs work?</h2>
+      <p className='pt-4 pb-8'>Some of music codes may not work, because they get deleted by Roblox due to copyright.</p>
     </>
   )
 }
