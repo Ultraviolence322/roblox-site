@@ -63,10 +63,10 @@ const Home: NextPage<Props> = ({parsedSongs, accessToken}) => {
           Lounch the game;
         </li>
         <li className="pb-2">
-          Click "Discover" in sidebar;
+          Click &ldquo;Discover&ldquo; in sidebar;
         </li>
         <li className="pb-2">
-          Type "Test Music Codes" in search experiences;
+          Type &ldquo;Test Music Codes&ldquo; in search experiences;
         </li>
         <li className="pb-2">
           Click first or second result;
